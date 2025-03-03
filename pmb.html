@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+</head>
+<body>
+    <img src="images/mdp.png" alt="Banner web" width = "10%">
+    <p>Kampus Inovasi</p>
+    <hr>
+    <a href="index.html">Home</a> | <a href="profil.html">Profil</a> | <a href="pmb.html">PMB</a> | <a href="hubungi.html">Hubungi Kami</a> <hr>
+    <h3>Penerimaan Mahasiswa Baru</h3>
+    <td>Universitas MDP membuka penerimaan mahasiswa baru untuk tahun akademik 2025/2026. Silahkan daftar segera!</td><br> 
+    </br>
+    <form action="proses.php" method="POST">
+        <label for="Nama">Nama Lengkap</label> <br>
+        <input type="text" name="Nama" required="required" /> </br> <br>
+        <label for="tanggal">Tanggal Lahir</label> <br>
+        <input type="date" name="tanggal"> <br></br>
+        <label for="jenis">Jenis Kelamin</label> <br>
+        <input type="radio" name="jenis" value = "L" checked> Laki-Laki
+        <input type="radio" name="jenis" value = "P" checked> Perempuan <br></br>
+        <label for="pilihan">Pilihan Program Studi</label> <br>
+        <select name="pilihan" id="pilihan">
+            <option value="SI">Sistem Informasi (S1)</option>
+            <option value="TI">Teknologi Informasi (S1)</option>
+            <option value="TE">Teknik Elektro (S1)</option>
+            <option value="AK">Akuntansi (S1)</option>
+            <option value="MJ">Manajemen (S1)</option>
+        </select> 
+        <br></br>
+        <label for="nomor">Nomor HP</label> <br>
+        <input type="nomor" name="nomor" required="required" /> </br> <br>
+        <label for="email">Email</label> <br>
+        <input type="email" name="email" required="required" /> </br> <br>
+        <label for="alamat">Alamat</label> <br>
+        <input type="alamat" name="nomor" required="required" /> <br /> <br>
+        <button type="submit">Daftar</button>
+    </form>
+    
+</body>
+</html>
